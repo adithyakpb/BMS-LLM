@@ -1,9 +1,10 @@
 import os
 from dotenv import load_dotenv
-from langchain_openai
+from langchain.chat_models import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()
-prompt = ChatPromptTemplate.from_template("Who are you")
+prompt = ChatPromptTemplate.from_template("Is this bms-llm?")
 
 model = ChatOpenAI(
     base_url="https://typically-nearby-puma.ngrok-free.app/v1", 
