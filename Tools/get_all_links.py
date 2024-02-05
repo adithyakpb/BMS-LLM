@@ -17,7 +17,6 @@ def extract_links_from_sitemap(sitemap_url):
 
             # Extract and print the href attribute from each <a> tag
             for a_tag in a_tags:
-                print(a_tag.get('href'))
                 links.append(a_tag.get('href'))
                 
         else:
