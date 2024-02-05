@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
-client = OpenAI(base_url="http://localhost:80/v1", api_key="not-needed")
+client = OpenAI(base_url="https://typically-nearby-puma.ngrok-free.app/v1", api_key="not-needed")
 
 user_query = ""
 while user_query != "exit":
